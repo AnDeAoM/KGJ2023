@@ -17,10 +17,7 @@ public class OnButtonPressScript : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab)) //Tab toggles instructions
-            instructions.gameObject.SetActive(!instructions.gameObject.activeSelf);
-
-        // need to pause game here
+        
             
     }
 
