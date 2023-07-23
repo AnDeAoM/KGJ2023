@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 05a721ae7623b684392fdd3ef20127f9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - idleFlower: {instanceID: 0}
+  - Grow: {fileID: 55870365866371603, guid: c1df77f9fa0d898448aa3b7facd42d5b, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
