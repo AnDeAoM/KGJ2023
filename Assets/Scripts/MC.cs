@@ -10,6 +10,7 @@ namespace AC
         public GameObject middleCloud;
         public GameObject littleCloud;
         public GameObject rainBarrier;
+        public GameObject lningBarrier;
         public GameObject rain;
         public GameObject lightning;
         public GameObject c;
@@ -72,16 +73,18 @@ namespace AC
             } else if (Input.GetMouseButton(1)) {
                 if (count > 0)
                 {
-                    rainBarrier.SetActive(true);
+                    rainBarrier.SetActive(false);
                     rain.SetActive(false);
+                    lningBarrier.SetActive(true);
                     lightning.SetActive(true);
                     raining = false;
                     lning = true;
                     count--;
-                }
+                } 
             } else {
                 rain.SetActive(false);  
                 rainBarrier.SetActive(false);
+                lningBarrier.SetActive(false);
                 lightning.SetActive(false); 
                 raining = false;
                 lning= false;

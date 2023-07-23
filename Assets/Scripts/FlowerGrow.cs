@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlowerDestroy : MonoBehaviour
+public class FlowerGrow : MonoBehaviour
 {
     public Animator myAnim;
+    private bool dead;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,14 +18,14 @@ public class FlowerDestroy : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        if(collision.tag == "Rain")
+        if(collision.tag == "Rain" && !dead)
         {
-            Debug.Log("Hello");
             myAnim.Play("Grow");
         }
-        if (collision.tag == "Lightning")
+        if (collision.tag == "Lightning" && !dead)
         {
-            Destroy(this.gameObject);
+            myAnim.Play("death");
+            dead = true;
         }
     }
 
